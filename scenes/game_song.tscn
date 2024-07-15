@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://01y37hgor7mt"]
+
+[ext_resource type="AudioStream" uid="uid://bi3gl2b2spqh6" path="res://images&resources/Brave Frontier OST - Sole Light.mp3" id="1_5vedb"]
+
+[node name="gameSong" type="AudioStreamPlayer"]
+stream = ExtResource("1_5vedb")
+volume_db = -5.0
+autoplay = true

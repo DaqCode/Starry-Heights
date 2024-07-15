@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bi3gl2b2spqh6"
+path="res://.godot/imported/Brave Frontier OST - Sole Light.mp3-c3fd263b3afa4a10bed38e1f62a2675c.mp3str"
+
+[deps]
+
+source_file="res://images&resources/Brave Frontier OST - Sole Light.mp3"
+dest_files=["res://.godot/imported/Brave Frontier OST - Sole Light.mp3-c3fd263b3afa4a10bed38e1f62a2675c.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

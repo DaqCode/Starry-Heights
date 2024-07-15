@@ -1,0 +1,229 @@
+[gd_scene load_steps=14 format=3 uid="uid://bbno6q1lo5f0e"]
+
+[ext_resource type="Texture2D" uid="uid://b454ok4sxjid0" path="res://images&resources/bgstars1.png" id="1_pi4j4"]
+[ext_resource type="FontFile" uid="uid://dwmmh72vbyha3" path="res://images&resources/m6x11.ttf" id="2_7qfpg"]
+[ext_resource type="Script" path="res://scripts/Continue.gd" id="3_y68yu"]
+[ext_resource type="Texture2D" uid="uid://nyregy3gq45l" path="res://images&resources/bgstars2.png" id="4_byl0x"]
+[ext_resource type="Texture2D" uid="uid://br46u3q8e4fpy" path="res://images&resources/bgstars3.png" id="5_s2yel"]
+[ext_resource type="Script" path="res://scripts/Continue2.gd" id="5_vmb2o"]
+[ext_resource type="Texture2D" uid="uid://dlqtx5nj5wjsq" path="res://images&resources/bgstars4.png" id="6_b0yn1"]
+[ext_resource type="Script" path="res://scripts/Continue3.gd" id="7_f7h4j"]
+[ext_resource type="Script" path="res://scripts/Continue4.gd" id="9_brrnv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_45g4s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wrt5k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_72aj3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ltevc"]
+
+[node name="prolouge" type="Node"]
+
+[node name="begin1" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="begin1"]
+offset_right = 655.0
+offset_bottom = 1150.0
+texture = ExtResource("1_pi4j4")
+
+[node name="Label" type="Label" parent="begin1/TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -318.5
+offset_top = -197.0
+offset_right = 319.5
+offset_bottom = 81.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = 50
+theme_override_fonts/font = ExtResource("2_7qfpg")
+theme_override_font_sizes/font_size = 35
+text = "When all hope seemed lost. It all came so clear.
+I grow tired of my tests. I must feed it more.
+With a final hopeful ornament, I send a hear,
+For lest it grows more within my core.
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Continue" type="Button" parent="begin1"]
+offset_left = 482.0
+offset_top = 674.0
+offset_right = 650.0
+offset_bottom = 738.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.466667, 0.00392157, 1, 1)
+theme_override_fonts/font = ExtResource("2_7qfpg")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxEmpty_45g4s")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_45g4s")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_45g4s")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_45g4s")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_45g4s")
+text = "Press Here 
+To Continue..."
+script = ExtResource("3_y68yu")
+
+[node name="begin2" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="TextureRect" type="TextureRect" parent="begin2"]
+offset_right = 655.0
+offset_bottom = 1150.0
+texture = ExtResource("4_byl0x")
+
+[node name="Label" type="Label" parent="begin2/TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -284.0
+offset_top = -197.0
+offset_right = 284.0
+offset_bottom = 81.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = 50
+theme_override_fonts/font = ExtResource("2_7qfpg")
+theme_override_font_sizes/font_size = 35
+text = "With so many messages to send, I wonder.
+What could I tell the people out there?
+Would they all tear it asunder?
+Or will they treat it well, I ponder?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Continue2" type="Button" parent="begin2"]
+offset_left = 482.0
+offset_top = 674.0
+offset_right = 650.0
+offset_bottom = 738.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.466667, 0.00392157, 1, 1)
+theme_override_fonts/font = ExtResource("2_7qfpg")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wrt5k")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wrt5k")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wrt5k")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_wrt5k")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wrt5k")
+text = "Press Here 
+To Continue..."
+script = ExtResource("5_vmb2o")
+
+[node name="begin3" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="TextureRect" type="TextureRect" parent="begin3"]
+offset_right = 655.0
+offset_bottom = 1150.0
+texture = ExtResource("5_s2yel")
+
+[node name="Label" type="Label" parent="begin3/TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -312.5
+offset_top = -197.0
+offset_right = 312.5
+offset_bottom = 81.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = 50
+theme_override_fonts/font = ExtResource("2_7qfpg")
+theme_override_font_sizes/font_size = 35
+text = "With a final breath, I send out my spirit.
+The name given, Staerie, will possess brilliance.
+Will the skies accept it as it is or fear it?
+Or will it burst with great dissilience?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Continue3" type="Button" parent="begin3"]
+offset_left = 482.0
+offset_top = 674.0
+offset_right = 650.0
+offset_bottom = 738.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.466667, 0.00392157, 1, 1)
+theme_override_fonts/font = ExtResource("2_7qfpg")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxEmpty_72aj3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_72aj3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_72aj3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_72aj3")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_72aj3")
+text = "Press Here 
+To Continue..."
+script = ExtResource("7_f7h4j")
+
+[node name="begin4" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="TextureRect" type="TextureRect" parent="begin4"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_b0yn1")
+
+[node name="Label" type="Label" parent="begin4/TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = -0.184896
+anchor_right = 0.5
+anchor_bottom = -0.184896
+offset_left = -319.0
+offset_top = 378.0
+offset_right = 319.0
+offset_bottom = 902.0
+grow_horizontal = 2
+theme_override_constants/line_spacing = 50
+theme_override_fonts/font = ExtResource("2_7qfpg")
+theme_override_font_sizes/font_size = 35
+text = "Now be free, young one.
+Make your trip to your home
+and reach it high.
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Continue4" type="Button" parent="begin4"]
+offset_left = 482.0
+offset_top = 674.0
+offset_right = 650.0
+offset_bottom = 738.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.466667, 0.00392157, 1, 1)
+theme_override_fonts/font = ExtResource("2_7qfpg")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ltevc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ltevc")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ltevc")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ltevc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ltevc")
+text = "Press Here 
+To Continue..."
+script = ExtResource("9_brrnv")
+
+[connection signal="pressed" from="begin1/Continue" to="begin1/Continue" method="_on_pressed"]
+[connection signal="pressed" from="begin2/Continue2" to="begin2/Continue2" method="_on_pressed"]
+[connection signal="pressed" from="begin3/Continue3" to="begin3/Continue3" method="_on_pressed"]
+[connection signal="pressed" from="begin4/Continue4" to="begin4/Continue4" method="_on_pressed"]

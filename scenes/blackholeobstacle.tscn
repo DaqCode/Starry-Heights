@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bannuo2topj33"]
+
+[ext_resource type="Texture2D" uid="uid://d010wklaxxdga" path="res://images&resources/blackHole.png" id="1_anooq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yq647"]
+radius = 10.9335
+height = 37.3571
+
+[node name="blackholeobstacle" type="AnimatableBody2D" groups=["obstacle"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1.52588e-05, 3.8147e-06)
+scale = Vector2(1.48438, 1.375)
+texture = ExtResource("1_anooq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3.8147e-06)
+rotation = 1.31768
+shape = SubResource("CapsuleShape2D_yq647")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

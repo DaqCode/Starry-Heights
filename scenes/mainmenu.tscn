@@ -1,0 +1,173 @@
+[gd_scene load_steps=8 format=3 uid="uid://4o4r8fxig32c"]
+
+[ext_resource type="Texture2D" uid="uid://cfgeg06aqryg5" path="res://images&resources/mainMenu.png" id="1_nwuo2"]
+[ext_resource type="FontFile" uid="uid://dwmmh72vbyha3" path="res://images&resources/m6x11.ttf" id="2_bwf36"]
+[ext_resource type="Script" path="res://scripts/play.gd" id="3_4c8va"]
+[ext_resource type="Script" path="res://scripts/question.gd" id="4_05mte"]
+[ext_resource type="Script" path="res://scripts/backtomenu.gd" id="5_km84a"]
+[ext_resource type="Texture2D" uid="uid://51tf7baomjpk" path="res://images&resources/Cheers_heat!.png" id="6_44ev3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y45f3"]
+
+[node name="mainmenu" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.5
+offset_right = 3.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_nwuo2")
+
+[node name="Title" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -348.0
+offset_top = 135.0
+offset_right = 307.0
+offset_bottom = 490.0
+grow_horizontal = 2
+rotation = -0.239246
+theme_override_colors/font_color = Color(0, 0.117647, 0.533333, 1)
+theme_override_fonts/font = ExtResource("2_bwf36")
+theme_override_font_sizes/font_size = 200
+text = "Starry
+Heights"
+horizontal_alignment = 1
+
+[node name="Menu" type="Node" parent="."]
+
+[node name="play" type="Button" parent="Menu"]
+process_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -174.0
+offset_top = 505.0
+offset_right = 175.0
+offset_bottom = 616.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.466667, 0.00392157, 1, 1)
+theme_override_fonts/font = ExtResource("2_bwf36")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxEmpty_y45f3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_y45f3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_y45f3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_y45f3")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_y45f3")
+text = "PLAY!"
+icon_alignment = 2
+script = ExtResource("3_4c8va")
+
+[node name="question" type="Button" parent="Menu"]
+process_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -272.0
+offset_top = 614.0
+offset_right = 273.0
+offset_bottom = 725.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.466667, 0.00392157, 1, 1)
+theme_override_fonts/font = ExtResource("2_bwf36")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxEmpty_y45f3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_y45f3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_y45f3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_y45f3")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_y45f3")
+text = "What do I do?"
+icon_alignment = 2
+script = ExtResource("4_05mte")
+
+[node name="Question?" type="Node" parent="."]
+
+[node name="questionPanel" type="Panel" parent="Question?"]
+visible = false
+top_level = true
+offset_left = 16.0
+offset_top = 143.0
+offset_right = 629.0
+offset_bottom = 1015.0
+
+[node name="Label" type="Label" parent="Question?/questionPanel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -270.5
+offset_top = 41.0
+offset_right = 274.5
+offset_bottom = 129.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_bwf36")
+theme_override_font_sizes/font_size = 100
+text = "What do I do?"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Question?/questionPanel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -285.5
+offset_top = 167.0
+offset_right = 289.5
+offset_bottom = 554.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_bwf36")
+theme_override_font_sizes/font_size = 25
+text = "Press A or D to move. 
+You can additionally press the arrow keys to move.
+Press P to pause the screen, and thats about it.
+
+Avoid the black holes.
+Avoid getting off screen.
+
+Getting slightly offscreeen won't be the end of the world,
+but you'll have to make it back up quickly enough.
+
+The music being played is from Brave Frontier, titled: 
+\"Sole Light\"
+
+Thank you for checking this project out again.
+
+
+"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="Question?/questionPanel"]
+process_mode = 3
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -250.5
+offset_top = -110.0
+offset_right = 251.5
+offset_bottom = -51.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_bwf36")
+theme_override_font_sizes/font_size = 57
+text = "Got it, thank you nerd"
+script = ExtResource("5_km84a")
+
+[node name="Sprite2D" type="Sprite2D" parent="Question?/questionPanel"]
+position = Vector2(310, 633)
+scale = Vector2(0.503, 0.48)
+texture = ExtResource("6_44ev3")
+
+[connection signal="pressed" from="Menu/play" to="Menu/play" method="_on_pressed"]
+[connection signal="pressed" from="Menu/question" to="Menu/question" method="_on_pressed"]
+[connection signal="pressed" from="Question?/questionPanel/Button" to="Question?/questionPanel/Button" method="_on_pressed"]
